@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(25, 46, 58);
+}
+
+.container-cabeçalho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-left: 0.8rem;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: #5bacdf;
+}
+
+.btn {
+  background-color: #5bacdf;
+  padding: 0.9rem 1.3rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  background-color: #011927;
+  color: #fff;
+}
+
+.Meio {
+  display: flex;
+  max-width: 100%;
+  margin-top: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Direita img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+.esquerda {
+  max-width: 100%;
+}
+
+.Title h1 {
+  font-size: 50px;
+  color: #ccc;
+  line-height: 4.5rem;
+}
+
+.esquerda p {
+  color: #ccc;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  font-size: 14px;
+}
+
+.esquerda button {
+  color: #fff;
+  background-color: #5bacdf;
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.esquerda button:hover {
+  background-color: #011927;
+  color: #fff;
+}
+
+aside {
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+  ul {
+    display: none;
+  }
+
+  .links {
+    display: block;
+  }
+
+  .logo {
+    margin-right: 15rem;
+  }
+
+  aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+  }
+
+  #Barra-menu {
+    background-color: #2889c2;
+    width: 0px;
+    height: 100vh;
+    transition: 0.3s all;
+  }
+
+  .icon-menu ion-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    color: #fff;
+  }
+
+  #Barra-menu ul {
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    line-height: 5rem;
+  }
+
+  #Barra-menu ul li a {
+    color: #011927;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  #Barra-menu ul li a:hover {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #5bacdf;
+  }
+
+  .C-icon {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow: hidden;
+  }
+  .C-icon span {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .Title h1 {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .esquerda p {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    width: 85%;
+  }
+
+  button {
+    margin-left: 1.5rem;
+  }
+
+  .Direita img {
+    max-width: 100%;
+    width: 500px;
+    margin-top: 3rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .Title h1 {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .Direita img {
+    max-width: 100%;
+    width: 350px;
+  }
+}
